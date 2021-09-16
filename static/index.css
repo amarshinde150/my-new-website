@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rel{
+    position: relative;
+}
+.mainContainer{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+    height:50vh;
+    color: white;
+    background:url("../static/logo1.JPG") center
+     center/cover no-repeat;
+}
+
+.nameBox .name{
+    text-shadow: 1px 1px rgb(231, 231, 231);
+    margin: 2px 0px;
+}
+
+.nameBox .dest{
+    margin: 4px 0px;
+    font-style: italic;
+    font-size: 12px;
+}
+#logo img{
+    /* position: absolute; */
+    /* top: 0%;
+    left: 0px; */
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    width: 60px;
+    margin: 0px 21px 0px 83px;
+    box-shadow: 1px 1px rgb(123, 202, 255);
+}
+.sectionOne{
+    display: flex;
+    padding: 19px 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #494949;
+    text-shadow: 1px 1px rgb(228, 228, 228);
+    background-color: #eeede8;
+    
+}
+.sectionOnContainer{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    justify-content: center;
+    width: 100vw;
+    /* grid-gap: 1rem; */
+}
+
+.itemContainer{
+    /* width: 32vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border:2px solid gray;
+    margin: 10px 45px;
+    background-color: #e7e9eb;
+}
+.iconImage{
+    width: 100px;
+    height: 100px;
+}
+
+
+#navBar{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d43b3b;
+}
+
+.navBarUl{
+    display: flex;
+}
+.navBarLi{
+    margin: 0px 10px;
+    list-style: none;
+}
+.navBarLink{
+    text-decoration: none;
+    color: white;
+    padding: 16px 6px;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+}
+.navBarLink:hover{
+    color: black;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100vw;
+    font-size: 14px;
+}
+
+@media screen and (max-width:400px){
+    #navBar{
+        height: 100px;
+        flex-direction: column;
+        background-color: #52d7ff;
+    }
+    .sectionOne{
+        display: flex;
+        padding: 19px 28px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ff8181;
+        text-shadow: 1px 1px rgb(255, 0, 0);
+        background-color: #ffde3b;
+        
+    }
+}

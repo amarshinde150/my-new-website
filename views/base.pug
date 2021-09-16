@@ -1,0 +1,25 @@
+doctype html 
+html 
+    head 
+        block title 
+        style 
+            include ../static/base.css
+        block style 
+        style.
+            @media only screen and (max-width: 320px) {
+                body {
+                         background: #FF5D50;
+                }
+            }
+    body 
+        div#blankBox
+        nav#navBar 
+            //- div#logo
+            //-     img(class="image" src="../static/logo.jpg")
+            ul.navBarUl 
+                li.navBarLi #[a.navBarLink(href="/") Home]
+                li.navBarLi #[a.navBarLink(href="/about") About]
+                li.navBarLi #[a.navBarLink(href="/contact") Contact Me]
+        block container 
+        footer#footer Copyright &copy; Amar Shinde  
+

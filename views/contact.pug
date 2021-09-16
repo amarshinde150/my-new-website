@@ -1,0 +1,18 @@
+extends base.pug
+
+block title 
+    title contact Amar Shinde
+
+block style 
+    style 
+        include ../static/contact.css
+
+block container
+    div.mainContactForm 
+        h2 Contact me,
+        form(action="/contact", method="post")
+            input(id="name" type="text" name="name" placeholder="Enter you name")
+            input(id="phonenumber" type="text" name="phonenumber" placeholder="Enter you mobile number")
+            input(id="email" type="email" name="email" placeholder="Enter you email")
+            button Submit
+
